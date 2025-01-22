@@ -1,0 +1,59 @@
+{
+  "name": "snyk-ecr-permissions",
+  "version": "0.1.0",
+  "bin": {
+    "index": "bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build clean": "tsc --build --clean",
+    "watch": "tsc -w",
+    "test": "jest --no-cache",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "22.7.9",
+    "@types/prettier": "2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "aws-cdk": "2.176.0",
+    "esbuild": "0.20.2",
+    "eslint": "^9.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "jest": "^29.7.0",
+    "jest-junit": "16.0.0",
+    "jshint": "2.13.6",
+    "lint-staged": "^15.3.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.176.0",
+    "constructs": "^10.0.0",
+    "snyk": "1.1295.0"
+  },
+  "engines": {
+    "npm": ">=10.9.2",
+    "node": ">=22.13.0"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "outputDirectory": "./test-results",
+    "outputName": "junit.xml",
+    "uniqueOutputName": "false",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  },
+  "audit-level": "critical",
+  "lint-staged": {
+    "*.ts": [
+      "npm run test"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+.idea
+node_modules
+cdk.out
+.snyk
+package-lock.json
+package.json
+.meta-repo.yml
+cdk.json
+jest.config.js
+tsconfig.json
+README.md

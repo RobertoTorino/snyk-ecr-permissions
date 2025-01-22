@@ -19,7 +19,7 @@ You will need your Snyk API key, Snyk organization's external id, the Snyk ECR i
 **Generic variables:**
 
 * **The usual dependencies to run CDK with typescript.**
-* **Clone or fork this repository https://bitbucket.org/persgroep/snyk-ecr-permissions/src/main/**
+* **Clone or fork this repository https://github.com/RobertoTorino/snyk-ecr-permissions**
 
 **Optional:**
 * **Add the AWS ChatBot subscription endpoint to the AWS Parameter store in Systems Manager: `https://global.sns-api.chatbot.amazonaws.com`, it's a one time operation. The endpoint can be reused

@@ -7,4 +7,3 @@ npm r inflight@1.0.6
 # deprecated
 npm r boolean@3.2.0
 npm r glob@7.2.3
-npm r inflight@1.0.6
